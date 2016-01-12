@@ -432,6 +432,9 @@ section{
 		top:0;
 		text-align:right;
 	}
+	.tree .tree-line {
+		width:100%;
+	}
 	.tree .line-01,
 	.tree .line-02,
 	.tree .line-03,
