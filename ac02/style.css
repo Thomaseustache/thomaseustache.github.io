@@ -374,7 +374,9 @@ section{
 	padding:40px 0;
 }
 @media screen and (max-width: 640px) {
-	
+	.tree .bulle {
+		display:none;
+	}
 	.wrapper,
 	#intro .intro-content,
 	#offres .grid{

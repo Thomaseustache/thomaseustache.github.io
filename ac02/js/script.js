@@ -11,15 +11,16 @@ $(document).ready(function(){
 		}
 		return false;
 	});
-	
+	if( $(window).width() > 640 ){
 	$('.tree-line .sentence').hide();
-	$('.bulle').click(function(){
-		linkTo = $(this).attr('data-link');
-		if( $('.'+linkTo).length ){
-			$('.tree-line .sentence').fadeOut(200);
-			$('.'+linkTo+' .sentence').stop().fadeIn(300);
-		}
-		return false;
-	});
+		$('.bulle').click(function(){
+			linkTo = $(this).attr('data-link');
+			if( $('.'+linkTo).length ){
+				$('.tree-line .sentence').fadeOut(200);
+				$('.'+linkTo+' .sentence').stop().fadeIn(300);
+			}
+			return false;
+		});
+	}
 
 });
