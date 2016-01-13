@@ -18,6 +18,7 @@ $(document).ready(function(){
 		});
 		$('.next-case,.prev-case').show();
 		$('.popin-case#'+caseNb).show().addClass('active');
+		$('html, body').animate({ scrollTop : $('.popin-case.active').offset().top }, 400);
 		return false;
 	});
 	$('.next-case').click(function(){
@@ -26,6 +27,7 @@ $(document).ready(function(){
 		if( next.length ){
 			$('.popin-case').hide().removeClass('active');
 			next.show().addClass('active');
+			$('html, body').animate({ scrollTop : $('.popin-case.active').offset().top }, 400);
 		}
 	});
 	$('.prev-case').click(function(){
@@ -34,6 +36,7 @@ $(document).ready(function(){
 		if( next.length ){
 			$('.popin-case').hide().removeClass('active');
 			next.show().addClass('active');
+			$('html, body').animate({ scrollTop : $('.popin-case.active').offset().top }, 400);
 		}
 	});
 	
