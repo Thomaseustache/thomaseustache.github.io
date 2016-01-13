@@ -143,6 +143,7 @@ section{
 	overflow:hidden;
 	text-align:center;
 	text-decoration:none;
+	cursor:pointer;
 	position:absolute;
 }
 .case-01 { top: 280px; left: 515px;}
@@ -203,6 +204,47 @@ section{
 	top:1380px;
 	width:300px;
 }
+.next-case,
+.prev-case{
+	background:#fff;
+	position:absolute;
+	top:200px;
+	left:50%;
+	width:40px;
+	height:40px;
+	line-height:30px;
+	font-size:22px;
+	font-weight:bold;
+	color:#ada07b;
+	margin-left:-420px;
+	border:4px #ada07b solid;
+	text-align:center;
+	cursor:pointer;
+	display:none;
+}
+.next-case {
+	margin-left:380px;
+}
+.popin-case {
+	background:#fff;
+	position:absolute;
+	top:120px;
+	left:50%;
+	width:800px;
+	margin-left:-400px;
+	padding:40px;
+	border:4px #ada07b solid;
+	display:none;
+}
+.overlay {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:#fff;
+	opacity:.8;
+}
 
 /* ABOUT */
 #about {
@@ -211,6 +253,66 @@ section{
 #about .about-content{
 	padding:40px 0;
 }
+/* ref */
+
+.logo-list {
+	text-align:center;
+	padding:40px 0;
+}
+.logo-list li {
+	display:inline-block;
+	width:150px;
+	height:150px;
+	background:#ccc;
+	margin:10px;
+}
+/* Contact */
+#contact form {
+	padding:40px 0;
+}
+#contact p{
+	margin-bottom:20px;
+}
+#contact .fieldset {
+	width:100%;
+	overflow:hidden;
+}
+#contact .fieldset p{
+	display:block;
+	float:left;
+	width:50%;
+}
+#contact .fieldset p+p{
+	padding-left:40px;
+}
+#contact input{
+	display:inline-block;
+	width:100%;
+	background:#fff;
+	padding:10px 5px;
+	border:1px #ccc solid;
+	border-radius:0;
+}
+#contact textarea{
+	font-family: 'Open Sans', sans-serif;
+	padding:5px;
+	border:1px #ccc solid;
+	width:100%;
+	min-height:100px;
+}
+#contact input.submit{
+	display:inline-block;
+	width:100px;
+	background:#226282;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	padding:10px;
+	border:0;
+	border-radius:0;
+}
+
+
 /* convictions */
 #convictions {
 	background:url(img/bulle-bg.gif) no-repeat 50% 100% #333132;
@@ -373,6 +475,19 @@ section{
 .page .content{
 	padding:40px 0;
 }
+/* footer */
+footer {
+	font-size:12px;
+	padding:20px 0;
+	color:#333;
+	text-align:center;
+}
+
+
+/************************
+**** MOBILE
+*************************/
+
 @media screen and (max-width: 640px) {
 	.tree .bulle {
 		display:none;
