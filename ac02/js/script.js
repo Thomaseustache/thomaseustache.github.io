@@ -42,7 +42,7 @@ $(document).ready(function(){
 	
 	
 	if( $(window).width() > 640 ){
-	$('.tree-line .sentence').hide();
+		$('.tree-line .sentence').hide();
 		$('.bulle').click(function(){
 			linkTo = $(this).attr('data-link');
 			if( $('.'+linkTo).length ){
@@ -50,6 +50,10 @@ $(document).ready(function(){
 				$('.'+linkTo+' .sentence').stop().fadeIn(300);
 			}
 			return false;
+		});
+	}else{
+		$('.header').click(function(){
+			$('.header .navigation').stop().slideToggle(300);
 		});
 	}
 
