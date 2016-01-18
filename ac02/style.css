@@ -833,6 +833,9 @@ footer {
 ****INTERMEDIAIRE 
 *****************/
 @media screen and (max-width: 768px) {
+	.header ul li {
+		margin:0 20px;
+	}
 	#offres .grid {
 		width:100%;
 	}
