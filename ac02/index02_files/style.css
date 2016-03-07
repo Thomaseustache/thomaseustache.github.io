@@ -180,12 +180,12 @@ section{
 	overflow: hidden;
 }
 .underline {
-	left: 640px;
+	left: 630px;
 	top: 1315px;
 	height: 50px;
 	padding: 15px 0;
 	line-height: 1.2;
-	width: 640px;
+	width: 660px;
 	overflow: hidden;
 }
 .point-01,
@@ -207,20 +207,20 @@ section{
 .point-03{top: 1210px;left: 600px;}
 
 .bloc-01 {
-	color:#414042;
+	color: #2c5367;
 	font-size:15px;
 	line-height:1.2;
 	position:absolute;
-	left:125px;
+	left: 165px;
 	top:1380px;
 	width:300px;
 }
 .bloc-02 {
-	color:#414042;
+	color: #2c5367;
 	font-size:15px;
 	line-height:1.2;
 	position:absolute;
-	left:530px;
+	left: 500px;
 	top:1380px;
 	width:300px;
 }
@@ -248,16 +248,18 @@ section{
 	margin-left:380px;
 }
 .close-case{
-	
+	top:40%;
 }
 .popin-case {
 	position:absolute;
 	z-index:5;
-	top:250px;
+	top:40%;
 	left:50%;
 	width:800px;
 	margin-left:-400px;
 	padding:40px;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
 	display:none;
 }
 .popin-case:before {
@@ -446,6 +448,9 @@ section{
 	margin-bottom:20px;
 }
 /* valeurs */
+#valeurs h2 {
+	background:#226282;
+}
 .tree {
 	width:100%;
 	height: 750px;
@@ -473,6 +478,12 @@ section{
 .tree .tree-text {
 	text-transform:uppercase;
 	margin-bottom: 20px;
+	opacity:.4;
+	-webkit-transition:.3s ease;
+	transition:.3s ease;
+}
+.tree .tree-line.active .tree-text {
+	opacity:1;
 }
 .tree .line-01{
     left: 640px;
@@ -541,9 +552,22 @@ section{
 /* carrieres */
 #carrieres {
 	background:#4d4d4f;
+	color:#fff;
 }
 #carrieres .section-title{
 	background:#4d4d4f;
+}
+.wysiwyg-content{
+	font-size:12px;
+	width:80%;
+	margin:auto;
+}
+.wysiwyg-content ul{
+	padding:20px;
+	list-style:square;
+}
+.wysiwyg-content ul li{
+	margin-bottom:20px;
 }
 .carriere-list {
 	padding:40px 0;
@@ -624,8 +648,8 @@ section{
 	border-right:40px #fff solid;
 	-webkit-transform-origin: 0% 0%;
 	transform-origin: 0% 0%;
-    -webkit-transform: skewX(-3deg);
-    transform: skewX(-3deg);
+    -webkit-transform: skewX(-4deg);
+    transform: skewX(-4deg);
 	width:calc(100% - 40px);
 }
 .banner-title h2{
@@ -950,6 +974,7 @@ footer {
 	}
 	.close-case{
 		margin-left:-20px;
+		top:250px;
 	}
 	.case-01{
 	    left: 376px;
@@ -1132,13 +1157,26 @@ footer {
 		left: 330px;
 	}
 	
+	.banner-title h2 {
+		top: inherit;
+		bottom: 0;
+		font-size:20px;
+		-webkit-transform: translate(-50%,-20px) skew(-5deg);
+		transform: translate(-50%,-20px) skew(-5deg);
+	}
+	.banner-title h2 span{
+		font-size:20px;
+	}
 	.banner-title:before, .banner-title:after {
 		display:none;
 	}
 	
 	.banner-title li {
 		width: 25%;
-		height: 50%;
+		height: 100%;
+	}
+	.banner-title {
+		height: 250px;
 	}
 	.banner-legend{
 		display:none;
