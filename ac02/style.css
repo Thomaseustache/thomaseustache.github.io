@@ -978,14 +978,7 @@ footer {
 	.bloc-02 {
 		left:410px;
 	}
-}
 
-
-/************************
-**** MOBILE
-*************************/
-
-@media screen and (max-width: 740px) {
 	#intro{
 		background:#fff;
 	}
