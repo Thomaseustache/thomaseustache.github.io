@@ -1131,7 +1131,16 @@ footer {
 	.bloc-02 {
 		left: 330px;
 	}
-	
+	.banner-title h2 {
+		top: inherit;
+		bottom: 0;
+		font-size:20px;
+		-webkit-transform: translate(-50%,-20px) skew(-5deg);
+		transform: translate(-50%,-20px) skew(-5deg);
+	}
+	.banner-title h2 span{
+		font-size:20px;
+	}
 	.banner-title:before, .banner-title:after {
 		display:none;
 	}
