@@ -10,7 +10,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	$('.case').click(function(){
+	$('.case').on('click touch',function(){
 		caseNb = $(this).attr('data-case');
 		
 		// $('.grid').after('<div class="overlay"></div>');
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		$('html, body').animate({ scrollTop : $('#offres').offset().top }, 400);
 		return false;
 	});
-	$('.close-case').click(function(){
+	$('.close-case').on('click touch',function(){
 		$('html, body').animate({ scrollTop : $('#offres').offset().top }, 400);
 		$('.close-case').fadeOut();
 		$('.grid').animate({'opacity':1, x:0},400);
@@ -50,7 +50,7 @@ $(document).ready(function(){
 	
 	if( $(window).width() > 640 ){
 		$('.tree-line .sentence').hide();
-		$('.bulle').click(function(){
+		$('.bulle').on('click touch',function(){
 			linkTo = $(this).attr('data-link');
 			if( $('.'+linkTo).length ){
 				$('.tree-line .sentence').fadeOut(200);
@@ -59,7 +59,7 @@ $(document).ready(function(){
 			return false;
 		});
 	}else{
-		$('.header').click(function(){
+		$('.header').on('click touch',function(){
 			$('.header .navigation').stop().slideToggle(300);
 		});
 	}
