@@ -201,10 +201,11 @@ section{
 	overflow:hidden;
 	text-align:center;
 	position:absolute;
+	top: 1230px;
 }
-.point-01{top: 1220px; left: 90px;}
-.point-02{top: 1220px; left: 350px;}
-.point-03{top: 1220px;left: 600px;}
+.point-01{ left: 90px;}
+.point-02{ left: 350px;}
+.point-03{ left: 600px;}
 
 .bloc-01 {
 	color: #2c5367;
