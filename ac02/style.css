@@ -330,6 +330,9 @@ section{
 #about {
 	background:url(img/motif.jpg) repeat 0 0;
 }
+#about .section-title{
+	background:#233741;
+}
 #about .about-content{
 	padding:40px 0;
 }
