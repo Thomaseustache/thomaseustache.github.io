@@ -764,8 +764,8 @@ section{
 	background: no-repeat 50% 50%;
 	background-size:cover;
 	height:100%;
-	-webkit-filter: grayscale(100%) sepia(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%) sepia(0%);
+	-webkit-filter: grayscale(100%) sepia(0%) hue-rotate(190deg); /* Chrome, Safari, Opera */
+    filter: grayscale(100%) sepia(0%) hue-rotate(190deg);
 	transition: .5s filter;
 	-webkit-transition: .5s -webkit-filter;
 }
