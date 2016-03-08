@@ -339,13 +339,23 @@ section{
 }
 #about .about-content{
 	padding:40px 0;
+	text-align:center;
 }
-#about .about-content ul {
-	padding:10px 40px;
-	list-style:square;
+
+#about .about-content .title-about{
+	font-weight:bold;
+	position:relative;
+	padding-bottom:10px;
 }
-#about .about-content ul li{
-	margin-bottom:10px;
+
+#about .about-content .title-about:after{
+	content:"";
+	display:block;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:1px;
+	left:0;
 }
 /* ref */
 #refclients .section-title {
