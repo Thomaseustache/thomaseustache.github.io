@@ -261,6 +261,7 @@ section{
 	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
 	display:none;
+	color:#aea175;
 }
 .popin-case:before {
 	content:"";
