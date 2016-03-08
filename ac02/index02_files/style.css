@@ -66,7 +66,7 @@ section{
 }
 .header ul  li.active a,
 .header ul  li:hover a{
-	color:#32a1d9;
+	color:#ada078;
 }
 
 /* intro */
@@ -82,6 +82,11 @@ section{
 	text-indent:-9999px;
 	margin-bottom:40px;
 	background:url(img/logo.png) no-repeat 0% 50%;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+.logo:hover {
+	background:url(img/logo_hover.png) no-repeat 0% 50%;
 }
 #intro .intro-content {
 	width:620px;
@@ -354,7 +359,20 @@ section{
 	display: inline-block;
 	/* text-transform: uppercase; */
 }
-
+#about .about-content ul li {
+	margin-bottom:20px;
+	display:inline-block;
+	position:relative;
+}
+#about .about-content ul li:before {
+	content:"";
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+	width:5px;
+	height:5px;
+	background:#32a1d9;
+}
 #about .about-content .title-about:after{
 	content:"";
 	display:block;
@@ -614,11 +632,18 @@ section{
 .wysiwyg-content .title-about{
 	font-weight:bold;
 	position:relative;
-	padding-bottom:10px;
 	margin:20px 0;
 	display: block;
-	border-bottom: 1px solid #32a1d9;
 	text-transform: uppercase;
+}
+.wysiwyg-content .title-about:before{
+	content:"";
+	display:block;
+	width:5px;
+	height:5px;
+	background:#32a1d9;
+	margin:20px auto;
+	position:relative;
 }
 .wysiwyg-content ul{
 	
