@@ -576,7 +576,7 @@ section{
 	width:5px;
 	height:5px;
 	background:#fff;
-	margin-bottom:20px;
+	margin:20px auto;
 	position:relative;
 }
 .carriere-list {
