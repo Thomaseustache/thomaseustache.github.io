@@ -43,7 +43,7 @@ section{
 }
 /* HEAD */
 .header {
-	background:#15232a;
+	background: #213742;
 	color:#fff;
 	height:42px;
 	line-height:42px;
@@ -202,9 +202,9 @@ section{
 	text-align:center;
 	position:absolute;
 }
-.point-01{top: 1210px; left: 90px;}
-.point-02{top: 1210px; left: 350px;}
-.point-03{top: 1210px;left: 600px;}
+.point-01{top: 1220px; left: 90px;}
+.point-02{top: 1220px; left: 350px;}
+.point-03{top: 1220px;left: 600px;}
 
 .bloc-01 {
 	color: #2c5367;
@@ -469,6 +469,12 @@ section{
     background: #207492;
 	border-radius:100%;
 	cursor:pointer;
+	-webkit-transition:.3s ease;
+	transition:.3s ease;
+}
+.tree .bulle.active {
+	border:2px #207492 solid;
+	background:#fff;
 }
 .bulle-01 {left: 712px;top: 125px;}
 .bulle-02 {left: 408px;top: 145px;}
@@ -482,6 +488,7 @@ section{
 .tree .tree-text {
 	text-transform:uppercase;
 	margin-bottom: 20px;
+	font-size: 14px;
 	opacity:.4;
 	-webkit-transition:.3s ease;
 	transition:.3s ease;
@@ -507,7 +514,6 @@ section{
 }
 .tree-title{
 	display:inline-block;
-	padding-left:40px;
 	font-size:21px;
 	color:#414042;
 	text-transform:uppercase;
