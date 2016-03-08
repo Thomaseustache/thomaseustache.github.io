@@ -362,7 +362,7 @@ section{
 	width:100%;
 	height:1px;
 	left:0;
-	background:#1f89be;
+	background:#32a1d9;
 }
 .info-about {
 	display:block;
@@ -478,7 +478,7 @@ section{
 	margin-bottom:10px;
 }
 #convictions .text-bloc h2 {
-	color: #1f89be;
+	color: #32a1d9;
 	font-size:21px;
 	text-transform:uppercase;
 	margin-bottom:20px;
@@ -498,7 +498,7 @@ section{
 	position:absolute;
 	width: 25px;
     height: 25px;
-    border:4px #207492 solid;
+    border:4px #32a1d9 solid;
 	background:#fff;
 	border-radius:100%;
 	/*cursor:pointer;*/
@@ -506,8 +506,8 @@ section{
 	transition:.3s ease;
 }
 .tree .bulle.active {
-	background: #207492;
-	border:4px #207492 solid;
+	background: #32a1d9;
+	border:4px #32a1d9 solid;
 }
 .bulle-01 {left: 712px;top: 125px;}
 .bulle-02 {left: 409px;top: 146px;}
@@ -899,7 +899,7 @@ section{
 	font-weight:bold;
 	margin-bottom:40px;
 	text-transform:uppercase;
-	border-bottom: 1px solid #1f89be;
+	border-bottom: 1px solid #32a1d9;
 }
 /* footer */
 footer {

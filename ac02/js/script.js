@@ -44,6 +44,7 @@ $(document).ready(function(){
 	if( $(window).width() > 640 ){
 		$('.tree-line .sentence').hide();
 		$('.bulle').hover(function(){
+			console.log('HOVER');
 			$('.bulle').removeClass('active');
 			$(this).addClass('active');
 			linkTo = $(this).attr('data-link');
