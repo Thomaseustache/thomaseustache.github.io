@@ -43,7 +43,7 @@ $(document).ready(function(){
 	
 	if( $(window).width() > 640 ){
 		$('.tree-line .sentence').hide();
-		$('.bulle').mouseenter(function(){
+		$('.bulle').hover(function(){
 			$('.bulle').removeClass('active');
 			$(this).addClass('active');
 			linkTo = $(this).attr('data-link');
@@ -52,6 +52,8 @@ $(document).ready(function(){
 				$('.'+linkTo+' .sentence').stop().fadeIn(300);
 			}
 			return false;
+		},function(){
+			$('.bulle').removeClass('active');
 		});
 	}else{
 		$('.header').click(function(){
