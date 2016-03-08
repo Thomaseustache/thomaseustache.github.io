@@ -782,8 +782,8 @@ section{
 	display:none;
 }
 .banner-title li:hover {
-	-webkit-filter:grayscale(0%) sepia(70%);
-	filter:grayscale(0%) sepia(70%);
+	-webkit-filter:grayscale(100%) sepia(40%) hue-rotate(190deg) brightness(0.8) saturate(210%);
+	filter:grayscale(100%) sepia(40%) hue-rotate(190deg) brightness(0.8) saturate(210%);
 }
 
 
