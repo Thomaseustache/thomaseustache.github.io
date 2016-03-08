@@ -43,8 +43,8 @@ $(document).ready(function(){
 	
 	if( $(window).width() > 640 ){
 		$('.tree-line .sentence').hide();
-		$('.bulle').removeClass('active');
 		$('.bulle').click(function(){
+			$('.bulle').removeClass('active');
 			$(this).addClass('active');
 			linkTo = $(this).attr('data-link');
 			if( $('.'+linkTo).length ){

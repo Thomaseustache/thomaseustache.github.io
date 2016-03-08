@@ -351,6 +351,7 @@ section{
 	padding-bottom:10px;
 	margin:20px 0;
 	display: inline-block;
+	/* text-transform: uppercase; */
 }
 
 #about .about-content .title-about:after{
@@ -386,7 +387,7 @@ section{
 	width:100%;
 	display:block;
 	color:#414042;
-	font-size:14px;
+	font-size: 16px;
 }
 .logo-list {
 	text-align:center;
@@ -458,12 +459,12 @@ section{
 	position:relative;
 }
 #convictions .text-bloc{
-	width:650px;
+	width: 630px;
 	margin:auto;
 	position:absolute;
 	top:180px;
 	left:50%;
-	margin-left:-325px;
+	margin-left: -265px;
 }
 #convictions .text-bloc p,
 #convictions .text-bloc ul {
@@ -477,7 +478,7 @@ section{
 	margin-bottom:10px;
 }
 #convictions .text-bloc h2 {
-	color:#226282;
+	color: #1f89be;
 	font-size:21px;
 	text-transform:uppercase;
 	margin-bottom:20px;
@@ -897,7 +898,7 @@ section{
 	font-weight:bold;
 	margin-bottom:40px;
 	text-transform:uppercase;
-	border-bottom:1px solid #aea175;
+	border-bottom: 1px solid #1f89be;
 }
 /* footer */
 footer {
