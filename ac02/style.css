@@ -350,6 +350,7 @@ section{
 	position:relative;
 	padding-bottom:10px;
 	margin:20px 0;
+	display: inline-block;
 }
 
 #about .about-content .title-about:after{

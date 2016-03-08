@@ -350,6 +350,7 @@ section{
 	position:relative;
 	padding-bottom:10px;
 	margin:20px 0;
+	display: inline-block;
 }
 
 #about .about-content .title-about:after{
@@ -361,6 +362,19 @@ section{
 	height:1px;
 	left:0;
 	background:#1f89be;
+}
+.info-about {
+	display:block;
+	margin:auto;
+	width:990px;
+	height:235px;
+	background:url(img/infos-about.png) no-repeat 0 0;
+	background-size:cover;
+	-webkit-transition:.3s ease;
+	transition:.3s ease;
+}
+.info-about {
+	background:url(img/infos-about_hover.png) no-repeat 0 0;
 }
 /* ref */
 #refclients .section-title {
