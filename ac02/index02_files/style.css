@@ -569,6 +569,7 @@ section{
 .wysiwyg-content ul li{
 	margin-bottom:20px;
 	position:relative;
+	text-align:center;
 }
 .wysiwyg-content ul li:before{
 	content:"";
