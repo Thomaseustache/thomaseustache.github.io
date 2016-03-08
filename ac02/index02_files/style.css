@@ -87,6 +87,7 @@ section{
 	font-size:16px;
 	line-height:1.2;
 	color:#233741;
+	color: #2c5367;
 }
 #intro ul,
 #intro p {
@@ -120,7 +121,7 @@ section{
 	/* font-weight:600; */
 	text-transform:uppercase;
 	display:block;
-	width:960px;
+	width: 1260px;
 	height:38px;
 	line-height:38px;
 	overflow:hidden;
@@ -128,7 +129,7 @@ section{
 	position:absolute;
 	top:65px;
 	left:50%;
-	margin-left:-480px;
+	margin-left: -650px;
 }
 .sub-title,
 .three-lines,
