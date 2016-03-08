@@ -492,26 +492,27 @@ section{
 	height: 750px;
 	background: url(img/tree.png) no-repeat 50% 50% #fff;
 	position:relative;
-	margin-top:100px;
+	margin-top: 80px;
 }
 .tree .bulle {
 	position:absolute;
 	width: 25px;
     height: 25px;
-    background: #207492;
+    border:4px #207492 solid;
+	background:#fff;
 	border-radius:100%;
 	cursor:pointer;
 	-webkit-transition:.3s ease;
 	transition:.3s ease;
 }
 .tree .bulle.active {
-	border:2px #207492 solid;
-	background:#fff;
+	background: #207492;
+	border:0px #207492 solid;
 }
-.bulle-01 {left: 712px;top: 125px;}
-.bulle-02 {left: 408px;top: 145px;}
-.bulle-03 {left: 833px;top: 316px;}
-.bulle-04 {left: 265px;top: 375px;}
+.bulle-01 {left: 715px;top: 125px;}
+.bulle-02 {left: 412px;top: 148px;}
+.bulle-03 {left: 835px;top: 318px;}
+.bulle-04 {left: 233px;top: 371px;}
 
 .tree .tree-line{
 	position:absolute;
@@ -530,19 +531,19 @@ section{
 }
 .tree .line-01{
     left: 640px;
-    top: -60px;
+    top: -20px;
 }
 .tree .line-02{
 	left: 80px;
-	top: -37px;
+	top: -7px;
 }
 .tree .line-03{
-	left: 712px;
+	left: 702px;
 	top: 368px;
 }
 .tree .line-04{
-	left: 10px;
-	top: 410px;
+	left: -20px;
+	top: 390px;
 }
 .tree-title{
 	display:inline-block;
