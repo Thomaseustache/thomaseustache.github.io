@@ -64,8 +64,9 @@ section{
 	color:#fff;
 	text-decoration:none;
 }
-.header ul  li.active a{
-	color:#aea175;
+.header ul  li.active a,
+.header ul  li:hover a{
+	color:#32a1d9;
 }
 
 /* intro */
@@ -615,7 +616,7 @@ section{
 	position:relative;
 	padding-bottom:10px;
 	margin:20px 0;
-	display: inline-block;
+	display: block;
 	border-bottom: 1px solid #32a1d9;
 	text-transform: uppercase;
 }
@@ -666,7 +667,9 @@ section{
 .carriere-block  .icone-3{
 	background:url(img/carriere-icones-03.png) no-repeat 50% 50%;
 }
-
+.bloc-about {
+	margin-bottom:20px;
+}
 
 /* PAGE */
 /*.page {
