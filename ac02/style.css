@@ -349,6 +349,7 @@ section{
 	font-weight:bold;
 	position:relative;
 	padding-bottom:10px;
+	margin:20px 0;
 }
 
 #about .about-content .title-about:after{
@@ -359,6 +360,7 @@ section{
 	width:100%;
 	height:1px;
 	left:0;
+	background:#1f89be;
 }
 /* ref */
 #refclients .section-title {
@@ -764,8 +766,8 @@ section{
 	background: no-repeat 50% 50%;
 	background-size:cover;
 	height:100%;
-	-webkit-filter: grayscale(100%) sepia(0%) hue-rotate(190deg); /* Chrome, Safari, Opera */
-    filter: grayscale(100%) sepia(0%) hue-rotate(190deg);
+	-webkit-filter: grayscale(100%) sepia(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%) sepia(0%);
 	transition: .5s filter;
 	-webkit-transition: .5s -webkit-filter;
 }
