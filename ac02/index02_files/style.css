@@ -306,6 +306,9 @@ section{
     width: 100%;
     border: none;
 }
+.page .popin-case .popin-content {
+	font-size:15px;
+}
 .overlay {
 	position:absolute;
 	left:0;
