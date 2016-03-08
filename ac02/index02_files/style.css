@@ -640,16 +640,20 @@ section{
 }
 .carriere-block {
 	display:inline-block;
-	margin:0 10px;
+	margin:0 40px;
 	color:#fff;
 	text-align:center;
 	width:150px;
-	font-size:12px;
+	font-size:16px;
 }
 .carriere-block  i {
 	height:85px;
 	display:block;
 	margin-bottom:20px;
+	border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 3px #fff solid;
 }
 
 .carriere-block  .icone-1{
