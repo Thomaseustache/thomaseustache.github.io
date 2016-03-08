@@ -616,7 +616,8 @@ section{
 	padding-bottom:10px;
 	margin:20px 0;
 	display: inline-block;
-	/* text-transform: uppercase; */
+	border-bottom: 1px solid #32a1d9;
+	text-transform: uppercase;
 }
 .wysiwyg-content ul{
 	
