@@ -375,6 +375,7 @@ section{
 }
 .info-about:hover {
 	background:url(img/infos-about_hover.png) no-repeat 0 0;
+	background-size:contain;
 }
 /* ref */
 #refclients .section-title {
