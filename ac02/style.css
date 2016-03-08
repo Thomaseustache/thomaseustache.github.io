@@ -827,8 +827,8 @@ section{
 	background: no-repeat 50% 50%;
 	background-size:cover;
 	height:100%;
-	-webkit-filter: grayscale(100%) sepia(0%) hue-rotate(190deg); /* Chrome, Safari, Opera */
-    filter: grayscale(100%) sepia(0%) hue-rotate(190deg);
+	-webkit-filter: grayscale(100%) sepia(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%) sepia(0%);
 	transition: .5s filter;
 	-webkit-transition: .5s -webkit-filter;
 }
@@ -845,8 +845,9 @@ section{
 	display:none;
 }
 .banner-title li:hover {
-	-webkit-filter:grayscale(100%) sepia(40%) hue-rotate(190deg) brightness(0.8) saturate(210%);
-	filter:grayscale(100%) sepia(40%) hue-rotate(190deg) brightness(0.8) saturate(210%);
+	-webkit-filter:grayscale(100%) sepia(25%);
+	filter:grayscale(100%) sepia(25%);
+	/*filter:grayscale(100%) sepia(40%) hue-rotate(190deg) brightness(0.8) saturate(210%);*/
 }
 
 
