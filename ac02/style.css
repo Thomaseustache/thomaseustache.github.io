@@ -363,6 +363,19 @@ section{
 	left:0;
 	background:#1f89be;
 }
+.info-about {
+	display:block;
+	margin:auto;
+	width:990px;
+	height:235px;
+	background:url(img/infos-about.png) no-repeat 0 0;
+	background-size:contain;
+	-webkit-transition:.3s ease;
+	transition:.3s ease;
+}
+.info-about:hover {
+	background:url(img/infos-about_hover.png) no-repeat 0 0;
+}
 /* ref */
 #refclients .section-title {
 	margin-bottom:40px;

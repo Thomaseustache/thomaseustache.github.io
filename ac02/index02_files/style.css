@@ -373,7 +373,7 @@ section{
 	-webkit-transition:.3s ease;
 	transition:.3s ease;
 }
-.info-abouthover {
+.info-about:hover {
 	background:url(img/infos-about_hover.png) no-repeat 0 0;
 }
 /* ref */
