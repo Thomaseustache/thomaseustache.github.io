@@ -498,15 +498,16 @@ section{
 	position:absolute;
 	width: 25px;
     height: 25px;
-    background: #207492;
+    border:4px #207492 solid;
+	background:#fff;
 	border-radius:100%;
 	cursor:pointer;
 	-webkit-transition:.3s ease;
 	transition:.3s ease;
 }
 .tree .bulle.active {
-	border:2px #207492 solid;
-	background:#fff;
+	background: #207492;
+	border:0px #207492 solid;
 }
 .bulle-01 {left: 712px;top: 125px;}
 .bulle-02 {left: 408px;top: 145px;}
