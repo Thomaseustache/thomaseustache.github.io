@@ -506,7 +506,8 @@ header {
     padding-bottom: 120px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-image: url(../img/backgrounds/refrences.png); }
+    background-image: url(../img/backgrounds/refrences.png);
+background-size:cover;	}
   #refrences .content {
     padding-bottom: 70px; }
     #refrences .content .refrence {
@@ -610,7 +611,8 @@ header {
     padding-bottom: 100px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-image: url(../img/backgrounds/team.png); }
+    background-image: url(../img/backgrounds/team.png);
+background-size:cover;	}
   #careers .wrapper .content {
     text-align: center; }
     #careers .wrapper .content .bloc .strengh {
