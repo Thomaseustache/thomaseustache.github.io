@@ -504,7 +504,7 @@ header {
     margin-top: -65px;
     padding-top: 125px;
     padding-bottom: 120px;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-image: url(../img/backgrounds/refrences.png);
 background-size:cover;	}
@@ -609,7 +609,7 @@ background-size:cover;	}
     margin-top: -80px;
     padding-top: 150px;
     padding-bottom: 100px;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-image: url(../img/backgrounds/team.png);
 background-size:cover;	}
