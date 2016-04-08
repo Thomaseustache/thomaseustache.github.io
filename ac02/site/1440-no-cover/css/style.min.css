@@ -612,6 +612,7 @@ background-size:cover;	}
     background-position: 50% 0%;
     background-repeat: no-repeat;
     background-image: url(../img/backgrounds/team.png);
+	margin-bottom:20px;
 background-size:cover;	}
   #careers .wrapper .content {
     text-align: center; }
