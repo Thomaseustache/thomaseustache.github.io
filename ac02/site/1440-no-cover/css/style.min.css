@@ -161,6 +161,13 @@ section {
           -webkit-transform-origin: right center;
               -ms-transform-origin: right center;
                   transform-origin: right center; }
+				  
+		.slider .slider-controller.white div{
+		border: 1px solid #fff;
+		}
+		.slider .slider-controller div.white:after, .slider .slider-controller div.white:before {
+		background:#fff;
+		}
 
 /* Skew */
 .skew {
