@@ -165,7 +165,7 @@ section {
 		.slider .slider-controller.white div{
 		border: 1px solid #fff;
 		}
-		.slider .slider-controller div.white:after, .slider .slider-controller div.white:before {
+		.slider .slider-controller.white div:after, .slider .slider-controller.white div:before {
 		background:#fff;
 		}
 
