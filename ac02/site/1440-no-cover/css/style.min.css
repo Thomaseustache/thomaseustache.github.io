@@ -166,7 +166,7 @@ section {
 		border: 1px solid #fff;
 		}
 		.slider .slider-controller.white div:after, .slider .slider-controller.white div:before {
-		background:#fff;
+			background:#fff;
 		}
 
 /* Skew */
