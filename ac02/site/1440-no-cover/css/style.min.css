@@ -231,23 +231,23 @@ header {
     padding-top: 40px;
     padding-bottom: 65px; }
   #offers .wrapper {
-    background-color: #fff; }
+    background-color: #fff;
+	transition:.3s;
+	}
     #offers .wrapper .slider {
       height: 685px; }
       #offers .wrapper .slider .slide {
         left: -100%;
         position: absolute;
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
+		width:100%;
         background-position: 50% 50%;
         background-repeat: no-repeat; }
         #offers .wrapper .slider .slide.active {
-          left: 50%; }
+          left: 0%; }
         #offers .wrapper .slider .slide.slide-1 {
-          background-image: url(../img/slide.png); }
+          background: url(../img/slide.png); }
           #offers .wrapper .slider .slide.slide-1 .slide-container {
-            width: 100%;
+            width: 980px;
             height: 100%; }
             #offers .wrapper .slider .slide.slide-1 .slide-container .title, #offers .wrapper .slider .slide.slide-1 .slide-container .text {
               position: absolute; }
