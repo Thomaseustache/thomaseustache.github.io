@@ -574,7 +574,7 @@ background-size:cover;	}
             font-size: 18px;
             margin-left: 35px;
             margin-bottom: 25px; }
-          #engagements .wrapper .slider .slide .slide-container .emphasis {
+          #engagements .wrapper .slider .slide .slide-container .emphasis span {
             color: #fff;
             font-size: 18px;
             margin-left: 50px;
@@ -584,7 +584,7 @@ background-size:cover;	}
             padding: 10px 25px 8px 30px;
             background-color: #226282;
             text-transform: uppercase; }
-            #engagements .wrapper .slider .slide .slide-container .emphasis span {
+            #engagements .wrapper .slider .slide .slide-container .emphasis .author {
               right: 0;
               top: 105%;
               color: #226282;
