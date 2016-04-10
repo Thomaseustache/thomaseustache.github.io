@@ -245,7 +245,7 @@ header {
         #offers .wrapper .slider .slide.active { 
           left: 0%; }
         #offers .wrapper .slider .slide.slide-1 {
-          background: url(../img/slide.png) 50% 50% no-repeat #334d5a; }
+          background: url(../img/slide.png) 50% 50% no-repeat #fff; }
           #offers .wrapper .slider .slide.slide-1 .slide-container {
             width: 980px;
             height: 100%; }
@@ -278,7 +278,8 @@ header {
             #offers .wrapper .slider .slide.slide-1 .slide-container .text-3 {
               left: 652px; }
         #offers .wrapper .slider .slide.slide-form-1 {
-          background-image: url(../img/bubbles/bubble-left-big.png); }
+          background-image: url(../img/bubbles/bubble-left-big.png);
+			background-color:#334d5a;		  }
         #offers .wrapper .slider .slide.slide-form-2 {
           background-image: url(../img/bubbles/bubble-middle-big.png);
 			background-color:#233741;		  }
