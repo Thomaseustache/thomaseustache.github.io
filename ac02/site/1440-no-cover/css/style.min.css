@@ -242,7 +242,7 @@ header {
 		width:100%;
         background-position: 50% 50%;
         background-repeat: no-repeat; }
-        #offers .wrapper .slider .slide.active {
+        #offers .wrapper .slider .slide.active { 
           left: 0%; }
         #offers .wrapper .slider .slide.slide-1 {
           background: url(../img/slide.png); }
