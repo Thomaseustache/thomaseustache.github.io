@@ -35,7 +35,7 @@ section .wrapper .content {
 section .main-title {
   z-index: 5;
   color: #fff;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -317,6 +317,8 @@ header .navigation li a.active {
   background-repeat: no-repeat;
   background-position: right top;
   background-image: url(../img/backgrounds/introduction.jpg);
+  background-size: 110%;
+  background-position: 100% 10%;
 }
 
 #introduction .wrapper .content {
@@ -329,7 +331,8 @@ header .navigation li a.active {
   width: 263px;
   height: 130px;
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  margin-top: 40px;
   text-indent: -99999px;
   background-position: 0% 0%;
   background-repeat: no-repeat;
@@ -346,8 +349,8 @@ header .navigation li a.active {
 }
 
 #offers .main-title {
-  padding-top: 60px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 #offers .wrapper {
@@ -437,6 +440,7 @@ header .navigation li a.active {
   /*background-image: url(../img/bubbles/bubble-left-big.png);*/
   background-image: url(../img/bubbles/slide-01-a.png);
   background-color: #334d5a;
+  /* background-size: 670px; */
 }
 
 #offers .wrapper .slider .slide.slide-form-2 {
@@ -578,7 +582,7 @@ header .navigation li a.active {
 }
 
 #about .convictions {
-  background-color: #a59c7c;
+  background-color: rgb(181, 172, 140);
 }
 
 #about .convictions .content {
@@ -612,6 +616,7 @@ header .navigation li a.active {
 
 #about .convictions .content .bubbles .bubble .content-bubble .title {
   font-size: 15px;
+  margin-bottom: 5px;
 }
 
 #about .convictions .content .bubbles .left {
@@ -631,21 +636,21 @@ header .navigation li a.active {
 }
 
 #about .convictions .content .bubbles .middle .content-bubble {
-  top: 45%;
+  top: 47%;
   left: 47%;
 }
 
 #about .convictions .content .bubbles .right {
   top: 10px;
   right: 55px;
-  width: 305px;
+  width: 320px;
   height: 200px;
   background-image: url(../img/bubbles/bubble-right.png);
 }
 
 #about .convictions .content .bubbles .right .content-bubble {
   top: 55%;
-  left: 60%;
+  left: 58%;
 }
 
 #about .stats {
@@ -710,7 +715,7 @@ header .navigation li a.active {
 #about .stats .tree .stat .number {
   top: -12px;
   font-size: 28px;
-  color: #298dbb;
+  color: #74ADC7;
   margin-right: 3px;
   position: relative;
   -webkit-transition:.3s;
@@ -775,13 +780,15 @@ header .navigation li a.active {
 	color:#2c6886;
 }
 #about .stats .tree .stat:hover .number {
-	color:#1bb3ff;
+	color: #298dbb;
 }
 #about .stats .tree .stat:hover:before {
 	background:#298dbb;
 	border:3px #298dbb solid;
 	padding:2px;
 	margin:-2px -2px 0 0;
+	/* background: #1bb3ff; */
+	/* border-color: #1bb3ff; */
 }
 #about .ambitions {
   padding-bottom: 60px;
@@ -828,6 +835,7 @@ header .navigation li a.active {
   background-repeat: no-repeat;
   background-image: url(../img/backgrounds/refrences.png);
   background-size: cover;
+  text-shadow: 0 0 30px rgba(0,0,0,1);
 }
 
 #refrences .content {
@@ -864,8 +872,8 @@ header .navigation li a.active {
 }
 
 #engagements .main-title {
-  padding-top: 60px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 #engagements .wrapper {
@@ -1047,15 +1055,17 @@ header .navigation li a.active {
 }
 
 #careers .wrapper .content .bloc .strengh .title {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 #careers .wrapper .content .bloc:first-of-type > .title {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #careers .wrapper .content .bloc:last-of-type > .title.light-blue {
   margin-bottom: 15px;
+  margin-top: 35px;
 }
 
 #careers .wrapper .content .bloc:last-of-type > .title.blue {
@@ -1101,7 +1111,7 @@ header .navigation li a.active {
 	background:#fff;
 	padding-top:40px;
 }
-#contact .main-title {padding-top: 90px;padding-bottom: 90px;}
+#contact .main-title {padding-top: 60px;padding-bottom: 60px;}
 #contact .banner-title {
 	position:relative;
 	max-width:1280px;
@@ -1246,7 +1256,7 @@ header .navigation li a.active {
 	z-index:3;
 	width:100%;
 	height:100%;
-	background:url(../img/backgrounds/linkedin-logo.png) no-repeat 50% 40%;
+	background: url(../img/backgrounds/linkedin-logo.png) no-repeat 50% 65%;
 	opacity:0;
 	transition: .5s;
 	-webkit-transition: .5s;
@@ -1366,5 +1376,4 @@ header .navigation li a.active {
 	font-weight:bold;
 	margin-bottom:40px;
 	text-transform:uppercase;
-	border-bottom: 1px solid #32a1d9;
 }
