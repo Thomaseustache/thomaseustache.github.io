@@ -446,7 +446,7 @@ header.second .navigation li a.logo {
 
 #offers .wrapper .slider .slide.slide-1 .slide-container .title.uppercase {
   top: 461px;
-  left: 189px;
+  left: 199px;
 }
 
 #offers .wrapper .slider .slide.slide-1 .slide-container .text-1 {
@@ -867,6 +867,7 @@ header.second .navigation li a.logo {
 
 #refrences .content {
   padding-bottom: 70px;
+  padding-top: 50px;
 }
 
 #refrences .content .refrence {
