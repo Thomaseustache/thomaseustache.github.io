@@ -443,6 +443,13 @@ header.second .navigation li a.logo {
   right: 157px;
   cursor: pointer;
 }
+#offers .wrapper .slider .slide.slide-1 .slide-container .title{
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+#offers .wrapper .slider .slide.slide-1 .slide-container .title:hover {
+	color:#298dbb
+}
 
 #offers .wrapper .slider .slide.slide-1 .slide-container .title.uppercase {
   top: 461px;
