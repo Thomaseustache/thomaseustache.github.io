@@ -35,7 +35,7 @@ section .wrapper .content {
 section .main-title {
   z-index: 5;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -43,8 +43,8 @@ section .main-title {
 }
 
 section .title {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
+  /*font-weight: bold;*/
 }
 
 section .title.blue {
@@ -76,7 +76,7 @@ section .title.uppercase {
 }
 
 section .text {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 section .text.gold {
@@ -590,7 +590,7 @@ header.second .navigation li a.logo {
 }
 
 #about .findings .content > .title {
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 #about .findings .content .container .finding {
@@ -603,7 +603,7 @@ header.second .navigation li a.logo {
 }
 
 #about .findings .content .container .finding .text {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #about .convictions {
@@ -822,7 +822,7 @@ header.second .navigation li a.logo {
   background-color: #fff;
   background-position: 0 0;
   background-repeat: repeat;
-  background-image: url(../img/backgrounds/pattern.png);
+  background-image: url(../img/backgrounds/pattern.jpg);
 }
 
 #about .ambitions .title {
@@ -873,6 +873,8 @@ header.second .navigation li a.logo {
 #refrences .content .refrence {
   text-align: center;
   border-bottom: 2px solid rgba(41, 141, 187, 0.5);
+  /* height: 90px; */
+  line-height: 90px;
 }
 
 #refrences .content .refrence img {
@@ -1067,6 +1069,7 @@ header.second .navigation li a.logo {
 	left:50%;
 	-webkit-transform:translateX(-50%);
 	transform:translateX(-50%);
+	display:none;
 }
 #careers .wrapper .content {
   text-align: center;
@@ -1405,3 +1408,19 @@ header.second .navigation li a.logo {
 	margin-bottom:40px;
 	text-transform:uppercase;
 }
+
+/* FOOTER */
+#footer {
+	font-size:11px;
+	color:#5c5c5c;
+	background:#efefef;
+}
+#footer a{
+	color:#5c5c5c;
+}
+#footer .title{
+	font-size:12px
+}
+
+
+
