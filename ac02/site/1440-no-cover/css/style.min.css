@@ -1429,5 +1429,91 @@ header.second .navigation li a.logo {
 	font-size:12px
 }
 
-
-
+@media screen and (max-width: 640px) {
+	
+	.main {
+		min-width:100%;
+	}
+	
+	section .wrapper .content {
+		width:100%;
+	}
+	#introduction {
+		background:none;
+		padding:0;
+	}
+	#introduction .wrapper .content {
+		padding:0 20px;
+	}
+	#introduction .wrapper .content .logo {
+		width:120px;
+		display:none;
+		background-size:contain;
+	}
+	#about .findings .content .container .finding {
+		width:100%;
+		float:none;
+		margin-bottom:20px;
+	}
+	#about .convictions .content .bubbles {
+		height:auto;
+	}
+	#about .convictions .content .bubbles .bubble {
+		position:relative;
+		left:inherit;
+		right:inherit;
+		top:inherit;
+		margin:auto;
+		width:100%;
+		height:auto;
+		margin-bottom:20px;
+		
+		background:#fff;
+	}
+	#about .convictions .content .bubbles .bubble .content-bubble {
+		position:relative;
+		left:inherit;
+		top:inherit;
+		-webkit-transform: translate(0%, 0%);
+		-ms-transform: translate(0%, 0%);
+		transform: translate(0%, 0%);
+		padding:20px 0;
+	}
+	#about .ambitions .container .grouped .ambition {
+		width:100%;
+		height:auto;
+		float:none;
+		margin-bottom:20px;
+	}
+	#engagements .wrapper .slider .slide {
+		background-size:contain;
+	}
+	#engagements .wrapper .slider {
+		height:300px;
+	}
+	#careers .wrapper .content .bloc .strengh {
+		width:100%;
+		margin-bottom:20px;
+		float:none;
+	}
+	#contact .banner-legend {
+		display:none;
+	}
+	#contact .banner-title:before,
+	#contact .banner-title:after{
+		display:none;
+	}
+	#contact .banner-title {
+		height:250px;
+	}
+	#contact .banner-title h2 {
+		width:80%;
+		top:60%;
+	}
+	#contact .banner-title h2 span{
+		font-size:14px;
+	}
+	#contact .content {
+		width:100%;
+	}
+}
