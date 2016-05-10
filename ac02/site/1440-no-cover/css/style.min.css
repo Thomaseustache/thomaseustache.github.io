@@ -745,7 +745,6 @@ header.second .navigation li a.logo {
 }
 
 #about .stats .tree .stat .number {
-  top: -12px;
   font-size: 28px;
   color: #74ADC7;
   margin-right: 3px;
@@ -756,7 +755,7 @@ header.second .navigation li a.logo {
 
 #about .stats .tree .stat.stat-1 {
   top: 30px;
-  left: 200px;
+  left: 196px;
   padding-right:40px;
 }
 #about .stats .tree .stat.stat-1:before {
@@ -764,8 +763,8 @@ header.second .navigation li a.logo {
 	top: 15px;
 }
 #about .stats .tree .stat.stat-2 {
-  top: 115px;
-  left: 90px;
+  top: 116px;
+  left: 80px;
   padding-right:40px;
 }
 #about .stats .tree .stat.stat-2:before {
@@ -774,7 +773,7 @@ header.second .navigation li a.logo {
 }
 #about .stats .tree .stat.stat-3 {
   top: 195px;
-  left: 105px;
+  left: 163px;
   padding-top:40px;
 }
 #about .stats .tree .stat.stat-3:before {
@@ -792,11 +791,11 @@ header.second .navigation li a.logo {
 }
 #about .stats .tree .stat.stat-5 {
   top: 80px;
-  right: 15px;
-  padding-left:40px;
+  right: 5px;
+  padding-left: 60px;
 }
 #about .stats .tree .stat.stat-5:before {
-	right: 195px;
+	right: 205px;
 	top: 13px;
 }
 #about .stats .tree .stat.stat-6 {
@@ -1436,14 +1435,14 @@ header.second .navigation li a.logo {
 	}
 	
 	section .wrapper .content {
-		width:100%;
+		width:90%;
 	}
 	#introduction {
 		background:none;
 		padding:0;
 	}
 	#introduction .wrapper .content {
-		padding:0 20px;
+		padding:20px;
 	}
 	#introduction .wrapper .content .logo {
 		width:120px;
@@ -1504,7 +1503,7 @@ header.second .navigation li a.logo {
 		display:none;
 	}
 	#contact .banner-title {
-		height:250px;
+		height:200px;
 	}
 	#contact .banner-title h2 {
 		width:80%;
@@ -1514,6 +1513,85 @@ header.second .navigation li a.logo {
 		font-size:14px;
 	}
 	#contact .content {
-		width:100%;
+		width:90%;
 	}
+	
+	
+	
+	#offers .wrapper .slider .slide.slide-1 {
+		background:#fff;
+	}
+	#offers .wrapper .slider .slide .slide-container {
+		width:80%!important;
+	}
+	#offers .wrapper .slider .slide {
+		background-size:contain!important;
+	}
+	#offers .wrapper .slider .slide.slide-1 .slide-container .title, #offers .wrapper .slider .slide.slide-1 .slide-container .text {
+		position:initial;
+		margin:20px 0;
+	}
+	#offers .wrapper .slider .slide br {
+		display:none;
+	}
+	.slider .slider-controller {
+		top:10%;
+	}
+	
+	
+	#about .stats .tree {
+		background:none;
+		height:auto;
+		padding: 0 10px;
+	}
+	#about .stats .tree .stat {
+		position:initial;
+		width:100%!important;
+		height:auto;
+		display:block;
+		padding:0!important;
+	}
+	#about .stats .tree .stat:before {
+		display:none;
+	}
+	#about .stats .tree .stat span br {
+		display:none;
+	}
+	
+	#refrences .content .refrence {
+		line-height:1;
+		padding:10px 0;
+	}
+	#refrences .content .refrence img {
+		margin:5px;
+	}
+	section .title {
+		font-size:15px;
+	}
+	#careers .wrapper .content .bloc .strengh br {
+		display: none;
+	}
+	
+	#contact .banner-title li .img {
+		background-size:320%;
+		background-position:50% 10%
+	}
+	
+	#offers .main-title {
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+	#refrences .main-title {
+		padding-top:80px;
+		padding-bottom:50px;
+	}
+	#engagements .main-title {
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}#careers .main-title {
+		padding-top: 70px;
+		padding-bottom: 50px;
+		background-size: 160%;
+	}
+	
 }
