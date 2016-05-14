@@ -1588,10 +1588,57 @@ header.second .navigation li a.logo {
 	#engagements .main-title {
 		padding-top: 10px;
 		padding-bottom: 40px;
-	}#careers .main-title {
+	}
+    #careers .main-title {
 		padding-top: 70px;
 		padding-bottom: 50px;
 		background-size: 160%;
 	}
 	
+	#offers .wrapper .slider {
+        height:535px;
+    }
+	
+	header .navigation {
+		width:100%;
+        padding-top:50px;
+        position:relative;
+        z-index:90;
+        display:none;
+	}
+	header .navigation li {
+        float:none;
+        display:block;
+        margin:0!important;
+	}
+    header .navigation li a.logo {
+        display:none;
+    }
+    .trigger-menu {
+        position:absolute;
+        height:50px;
+        width:100%;
+        top:0;
+        z-index:99;
+        left:0;
+        background:url(../img/mobile-header.gif) no-repeat 50% 50% #233741;
+        
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
