@@ -1436,21 +1436,28 @@ p.title.gold.title-1.target {}
 	
 	.main {
 		min-width:100%;
+		padding-top:49px!important;
 	}
 	
 	section .wrapper .content {
 		width:90%;
 	}
 	#introduction {
-		background:none;
+		background-position:0 -50px;
 		padding:0;
+		margin:0;
+	}
+	#introduction .wrapper {
+		padding-bottom:0;
 	}
 	#introduction .wrapper .content {
 		padding:20px;
+		padding-top:50px;
 	}
 	#introduction .wrapper .content .logo {
-		width:120px;
-		display:none;
+		width:160px;
+		height:110px;
+		margin:0 auto;
 		background-size:contain;
 	}
 	#about .findings .content .container .finding {
@@ -1695,6 +1702,29 @@ p.title.gold.title-1.target {}
 	.slider .slider-controller.white div:after {
 		background: #2c5367!important;
 	}
+	
+	#engagements .wrapper .slider .slide {
+		background-position:50% 80px;
+		background-size:350px;
+	}
+
+	#offers .wrapper .slider .slide {
+		background-color:#fff!important;
+		background-position:50% 30px;
+		background-size:350px;
+	}
+	#offers .wrapper .slider .slide.slide-1 .slide-container .text.light-blue {
+		padding-top:5px;
+		margin:0;
+		margin-bottom:5px;
+	}
+	#offers .wrapper .slider {
+		height:585px;
+	}
+	#offers .wrapper .slider .slide.slide-form-3 {
+		background-position:-50px 30px;
+	}
+	
 }
 
 
