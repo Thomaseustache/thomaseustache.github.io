@@ -419,7 +419,11 @@ header.second .navigation li a.logo {
 
 #offers .wrapper .slider .slide.slide-1 .slide-container .title.gold {
   font-size: 18px;
+  padding-bottom: 20px;
+  border-bottom: 1px #a59c7c solid;
 }
+
+p.title.gold.title-1.target {}
 
 #offers .wrapper .slider .slide.slide-1 .slide-container .text.light-blue {
   bottom: 110px;
@@ -1462,10 +1466,11 @@ header.second .navigation li a.logo {
 		left:inherit;
 		right:inherit;
 		top:inherit;
+		bottom:inherit;
 		margin:auto;
 		width:100%;
 		height:auto;
-		margin-bottom:20px;
+		margin-bottom:10px;
 		
 		background:#fff;
 	}
@@ -1488,7 +1493,7 @@ header.second .navigation li a.logo {
 		background-size:contain;
 	}
 	#engagements .wrapper .slider {
-		height:300px;
+		height:380px;
 	}
 	#careers .wrapper .content .bloc .strengh {
 		width:100%;
@@ -1530,6 +1535,7 @@ header.second .navigation li a.logo {
 	#offers .wrapper .slider .slide.slide-1 .slide-container .title, #offers .wrapper .slider .slide.slide-1 .slide-container .text {
 		position:initial;
 		margin:20px 0;
+		/* font-size: 41px; */
 	}
 	#offers .wrapper .slider .slide br {
 		display:none;
@@ -1592,11 +1598,12 @@ header.second .navigation li a.logo {
     #careers .main-title {
 		padding-top: 70px;
 		padding-bottom: 50px;
-		background-size: 160%;
+		background-size: 180%;
 	}
 	
 	#offers .wrapper .slider {
-        height:535px;
+        height: 655px;
+        padding-top: 90px;
     }
 	
 	header .navigation {
@@ -1624,6 +1631,52 @@ header.second .navigation li a.logo {
         background:url(../img/mobile-header.gif) no-repeat 50% 50% #233741;
         
     }
+	
+	
+	
+	
+	#offers .wrapper .slider .slide.slide-1 .slide-container .title.uppercase{
+		font-size:14px;
+		border-bottom:0;
+		padding-bottom:0;
+	}
+	#offers .wrapper .slider .slide.slide-1 .slide-container .text.light-blue {
+		position:relative;
+		left:0;
+		bottom:inherit;
+		padding-top:20px;
+	}
+	#about .stats .tree .stat {
+		position:relative;
+		left:inherit!important;
+		top:inherit!important;
+		right:inherit!important;
+		bottom:inherit!important;
+		text-align:center;
+		margin-bottom:10px;
+		font-size: 13px
+	}
+	#about .stats .tree .stat .number {
+		font-size:24px;
+	}
+	#about .stats .tree .stat:after ,
+	#offers .wrapper .slider .slide.slide-1 .slide-container .text.light-blue:after {
+		top: 0;
+		left: 50%;
+		content: '';
+		width: 5px;
+		height: 5px;
+		position: absolute;
+		border-radius: 100%;
+		background-color: #298dbb;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	#about .convictions .content > .title {
+		margin-bottom:20px;
+	}
+	
 }
 
 
