@@ -1676,7 +1676,25 @@ p.title.gold.title-1.target {}
 	#about .convictions .content > .title {
 		margin-bottom:20px;
 	}
-	
+	#careers .wrapper .content .bloc:first-of-type > .title {
+		margin-top:0;
+	}
+	#careers .wrapper .content .bloc:last-of-type > .title.light-blue {
+		margin-top:15px;
+	}
+	#careers .wrapper .content .emphasis:before {
+		bottom:45px;
+	}
+	#careers .wrapper .content .emphasis:after {
+		bottom:-15px;
+	}
+	.slider .slider-controller.white div {
+		border: 1px solid #2c5367!important;
+	}
+	.slider .slider-controller.white div:before,
+	.slider .slider-controller.white div:after {
+		background: #2c5367!important;
+	}
 }
 
 
