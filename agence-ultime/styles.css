@@ -100,6 +100,10 @@ body {
     color: #ff5757;
     font-weight: 700;
 }
+.desc {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
 
 ul {
     list-style: none;
