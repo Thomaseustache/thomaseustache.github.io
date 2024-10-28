@@ -19,10 +19,10 @@ body {
 
 .hero-section {
     background:black;
-    background: #040404 url(../img/bg.jpg) 70% 10% no-repeat;
+    background: #040404 url(../assets/img/bg.jpg) 70% 30% no-repeat;
     background-size: cover;
     color: white;
-    padding: 140px 0;
+    padding: 300px 0 100px;
     text-align: center;
 }
 
@@ -36,6 +36,19 @@ body {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 20px;
+}
+.hero-section figure {
+    margin: auto;
+    overflow: hidden;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+.hero-section figure img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cta-button {
