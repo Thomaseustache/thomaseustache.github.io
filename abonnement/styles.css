@@ -19,12 +19,10 @@ body {
 
 .hero-section {
     background:black;
-    position: fixed;
     background: #040404 url(../img/bg.jpg) 70% 10% no-repeat;
     background-size: cover;
-
     color: white;
-    padding: 100px 0;
+    padding: 140px 0;
     text-align: center;
 }
 
