@@ -255,6 +255,12 @@ ul li i.fa-check-circle {
     text-align: center;
 }
 
+.footer .social-links a{
+    color: #18d26e;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
 .footer ul {
     list-style: none;
     display: flex;
