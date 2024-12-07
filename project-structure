@@ -1,0 +1,26 @@
+portfolio/
+├── index.html
+├── about.html
+├── sandbox.html
+├── photos.html
+├── cv.html
+├── css/
+│   ├── style.css
+│   └── reset.css
+├── js/
+│   └── main.js
+├── assets/
+│   └── img/
+│       └── work/
+│           ├── Klapform/
+│           ├── Lactel/
+│           ├── Nomadspot/
+│           ├── Restart-Esport/
+│           └── Warner-Music-France/
+├── work/
+│   ├── klapform.html
+│   ├── lactel.html
+│   ├── nomadspot.html
+│   ├── restart-esport.html
+│   └── warner-music.html
+└── .htaccess 

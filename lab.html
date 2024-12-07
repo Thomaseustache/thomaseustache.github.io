@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab - Your Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="lab.html" class="active">Lab</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li class="lang-switch">
+                    <button onclick="switchLanguage('en')">EN</button>
+                    <span>/</span>
+                    <button onclick="switchLanguage('fr')">FR</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lab-page">
+        <div class="lab-grid">
+            <figure class="lab-item full">
+                <img src="https://picsum.photos/1920/1080?random=1" alt="Lab work">
+            </figure>
+            <figure class="lab-item half">
+                <img src="https://picsum.photos/800/600?random=2" alt="Lab work">
+            </figure>
+            <figure class="lab-item half">
+                <img src="https://picsum.photos/800/600?random=3" alt="Lab work">
+            </figure>
+            <figure class="lab-item full">
+                <img src="https://picsum.photos/1920/1080?random=4" alt="Lab work">
+            </figure>
+            <!-- Ajoutez plus d'images selon vos besoins -->
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
