@@ -165,11 +165,71 @@ nav a:hover::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
     transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .project-card:hover .project-image img {
     transform: scale(1.05);
+}
+
+/* Réinitialisation des styles Masonry pour les projets */
+.project-card .project-image,
+.project-card .project-image img {
+    float: none;
+    margin: 0;
+    width: 100%;
+}
+
+/* Styles spécifiques pour la grille de photos (Masonry) */
+.photos-grid .grid-sizer,
+.photos-grid .grid-item {
+    width: calc(33.333% - 21px);
+}
+
+.photos-grid .grid-item {
+    margin-bottom: 32px;
+}
+
+.photos-grid .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity var(--transition-fast);
+}
+
+.photos-grid .grid-item:hover img {
+    opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .photos-grid .grid-sizer,
+    .photos-grid .grid-item {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 768px) {
+    .photos-grid .grid-sizer,
+    .photos-grid .grid-item {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+/* Ajout d'un fallback pour les navigateurs qui ne supportent pas aspect-ratio */
+@supports not (aspect-ratio: 16/9) {
+    .project-image::before {
+        float: left;
+        padding-top: 56.25%; /* 9/16 * 100% */
+        content: '';
+    }
+    
+    .project-image::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
 }
 
 .project-info {
@@ -196,16 +256,18 @@ nav a:hover::after {
 
 .project-hero {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 6;
-    margin-bottom: var(--spacing-xl);
     position: relative;
+    overflow: hidden;
+    height: 50vh;
+    min-height: 300px;
+    margin-bottom: var(--spacing-xl);
 }
 
 .project-hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .project-intro {
@@ -293,7 +355,9 @@ nav a:hover::after {
     }
 
     .project-hero {
-        height: 60vh;
+        height: 30vh;
+        min-height: 200px;
+        margin-bottom: var(--spacing-lg);
     }
 
     .project-header h1 {
@@ -697,45 +761,202 @@ footer p {
     }
 }
 
-/* Photos Grid avec Masonry */
-.photos-grid {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: var(--spacing-xl);
-}
-
-.grid-sizer,
-.grid-item {
-    width: calc(33.333% - 22px);
-}
-
-.grid-item {
-    margin-bottom: 32px;
-    float: left;
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: opacity var(--transition-fast);
-}
-
-.grid-item img:hover {
-    opacity: 0.8;
-}
-
-@media (max-width: 1024px) {
-    .grid-sizer,
-    .grid-item {
-        width: calc(50% - 16px);
+/* Animations de fondu */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
+/* Classes pour l'animation */
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in.appear {
+    animation: fadeInUp 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Délais plus espacés pour les éléments en cascade */
+.fade-in:nth-child(2) { animation-delay: 0.25s; }
+.fade-in:nth-child(3) { animation-delay: 0.5s; }
+.fade-in:nth-child(4) { animation-delay: 0.75s; }
+.fade-in:nth-child(5) { animation-delay: 1s; }
+
+/* Appliquer l'animation aux sections principales */
+.hero-content,
+.project-card,
+.photos-grid .grid-item,
+.sandbox-item,
+.about-content > *,
+.project-hero,
+.project-intro,
+.clients-grid .client-logo {
+    opacity: 0;
+}
+
+/* Optimisations pour les animations */
+.fade-in {
+    will-change: opacity, transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Désactiver les animations pour les préférences de mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* Optimiser l'animation pour les grilles */
+.project-grid,
+.photos-grid,
+.sandbox-grid {
+    overflow: hidden; /* Pour éviter les scrollbars pendant l'animation */
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .grid-sizer,
-    .grid-item {
+    /* Ajustement des espacements */
+    :root {
+        --spacing-xl: clamp(3rem, 6vw, 4rem);
+        --spacing-lg: clamp(1.5rem, 3vw, 2rem);
+        --font-size-xl: clamp(1.75rem, 5vw, 2rem);
+        --font-size-lg: clamp(1.125rem, 4vw, 1.25rem);
+    }
+
+    /* Header adjustments */
+    header {
+        padding: var(--spacing-sm) 0;
+    }
+
+    nav ul {
+        gap: var(--spacing-sm);
+    }
+
+    .name {
+        display: none; /* Cacher le nom sur mobile pour plus d'espace */
+    }
+
+    /* Hero section */
+    .hero {
+        min-height: 60vh;
+        padding-top: 80px;
+    }
+
+    .hero-content {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Project grid */
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .project-card {
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Project detail page */
+    .project-detail {
+        padding-top: 80px;
+    }
+
+    .project-hero {
+        aspect-ratio: 16/6;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .project-header {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .project-meta {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    /* Container and wrapper */
+    .container,
+    .wrapper {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* About page */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .about-content h1 {
+        position: static;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .about-text p {
+        font-size: var(--font-size-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Sandbox grid */
+    .sandbox-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    /* Photos grid */
+    .photos-grid .grid-sizer,
+    .photos-grid .grid-item {
         width: 100%;
-        margin-bottom: 16px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Footer */
+    footer {
+        margin-top: var(--spacing-lg);
+        padding: var(--spacing-lg) 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+
+    /* Animation adjustments for mobile */
+    .fade-in.appear {
+        animation-duration: 1.5s; /* Légèrement plus rapide sur mobile */
+    }
+
+    /* Délais réduits sur mobile */
+    .fade-in:nth-child(2) { animation-delay: 0.2s; }
+    .fade-in:nth-child(3) { animation-delay: 0.4s; }
+    .fade-in:nth-child(4) { animation-delay: 0.6s; }
+    .fade-in:nth-child(5) { animation-delay: 0.8s; }
+}
+
+/* Ajustements pour les tablettes */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .project-grid {
+        gap: var(--spacing-lg);
+    }
+
+    .container,
+    .wrapper {
+        padding: 0 var(--spacing-md);
+    }
+
+    .about-content {
+        gap: var(--spacing-lg);
     }
 }
