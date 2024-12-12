@@ -260,7 +260,7 @@ nav a:hover::after {
     overflow: hidden;
     height: 50vh;
     min-height: 300px;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl); 
 }
 
 .project-hero img {
@@ -779,14 +779,14 @@ footer p {
 }
 
 .fade-in.appear {
-    animation: fadeInUp 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* Délais plus espacés pour les éléments en cascade */
-.fade-in:nth-child(2) { animation-delay: 0.25s; }
-.fade-in:nth-child(3) { animation-delay: 0.5s; }
-.fade-in:nth-child(4) { animation-delay: 0.75s; }
-.fade-in:nth-child(5) { animation-delay: 1s; }
+.fade-in:nth-child(2) { animation-delay: 0.125s; }
+.fade-in:nth-child(3) { animation-delay: 0.25s; }
+.fade-in:nth-child(4) { animation-delay: 0.375s; }
+.fade-in:nth-child(5) { animation-delay: 0.5s; }
 
 /* Appliquer l'animation aux sections principales */
 .hero-content,
@@ -958,5 +958,62 @@ footer p {
 
     .about-content {
         gap: var(--spacing-lg);
+    }
+}
+
+/* Skills Section */
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.skills h2 {
+    font-size: var(--font-size-xl);
+    position: sticky;
+    top: 120px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-light);
+    transition: all var(--transition-fast);
+}
+
+.skill-tag:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .skills h2 {
+        position: static;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .skills-tags {
+        gap: 8px;
+    }
+    
+    .skill-tag {
+        padding: 6px 12px;
+        font-size: 14px;
     }
 }
