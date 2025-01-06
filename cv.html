@@ -3,89 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Your Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Thomas Eustache - Resume</title>
+    <link href="favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .cv-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+        }
+
+        .left-column {
+            background-color: #f8f8f8;
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            object-position: 75% center;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            color: #2c5282;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .contact-list li i {
+            width: 20px;
+            margin-right: 10px;
+            color: #2c5282;
+        }
+
+        .contact-list a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #fff;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .interests-list {
+            list-style: none;
+        }
+
+        .interests-list li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .right-column {
+            padding: 30px 0;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .experience-meta {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .experience-description {
+            font-size: 14px;
+            color: #444;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+            .cv-container {
+                gap: 20px;
+            }
+            .left-column {
+                background-color: #f8f8f8 !important;
+                -webkit-print-color-adjust: exact;
+            }
+            .project-link {
+                background-color: transparent !important;
+                color: #2c5282 !important;
+                border: 1px solid #2c5282;
+                -webkit-print-color-adjust: exact;
+            }
+            .contact-list a {
+                color: #2c5282 !important;
+                -webkit-print-color-adjust: exact;
+            }
+            .contact-list li i {
+                color: #2c5282 !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 8px 16px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .experience-meta a {
+            color: #2c5282;
+            text-decoration: none;
+        }
+
+        .experience-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .project-link {
+            background-color: #2c5282;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .project-link:hover {
+            background-color: #1a365d;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="sandbox.html">Sandbox</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a href="cv.html" class="active">CV</a></li>
-                </ul>
-            </nav>
-            <div class="name">Thomas Eustache</div>
-        </div>
-    </header>
+    <a href="/" class="back-button no-print">← Back to portfolio</a>
 
-    <main class="cv-page">
-        <div class="wrapper">
-            <div class="cv-header">
-                <div class="cv-intro">
-                    <h1>Thomas Eustache</h1>
-                    <h2>Frontend Developer & Designer</h2>
-                    <div class="cv-contact">
-                        <a href="https://thomaseustache.github.io/" target="_blank">Portfolio</a>
-                        <a href="https://linkedin.com/in/thomaseustache" target="_blank">LinkedIn</a>
-                        <a href="cv-thomas-eustache-cv-2024.pdf" class="download-cv" target="_blank">Download PDF</a>
-                    </div>
+    <div class="cv-container">
+        <div class="left-column">
+            <div class="profile-section">
+                <img src="assets/img/about/thomas-eustache-photo.jpg" alt="Thomas Eustache" class="profile-image">
+                <h1 class="name">Thomas Eustache</h1>
+                <p class="title">Creative Developer & Designer</p>
+                <p class="tagline">Creative, Passionate, Innovation-driven</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:eustacht@gmail.com">eustacht@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Paris, France
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <a href="https://thomaseustache.github.io">thomaseustache.github.io</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/thomaseustache">linkedin.com/in/thomaseustache</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue</span>
+                    <span class="skill-tag">NodeJS</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">ThreeJS</span>                    
+                    <span class="skill-tag">GSAP</span>
+                    <span class="skill-tag">WordPress</span>
+                    <span class="skill-tag">Photoshop</span>
+                    <span class="skill-tag">After Effects</span>
+                    <span class="skill-tag">Premiere Pro</span>
                 </div>
             </div>
 
-            <div class="cv-content">
-                <section class="cv-section">
-                    <h3>Experience</h3>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4>Lead Designer</h4>
-                            <span class="company">POWDER</span>
-                            <span class="date">2023 - Present</span>
-                        </div>
-                        <p>Building the video infrastructure of social gaming</p>
-                    </div>
-
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4>Lead Designer</h4>
-                            <span class="company">KARD</span>
-                            <span class="date">2022 - 2023</span>
-                        </div>
-                        <p>Empowering young people to take control over their money by offering them a bank that is cool, social and free.</p>
-                    </div>
-                </section>
-
-                <section class="cv-section">
-                    <h3>Side Projects</h3>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4>FOREIGNRAP</h4>
-                        </div>
-                        <p>A platform to discover + enjoy international rap music. Ran by enthusiasts, we share artists from across the world.</p>
-                    </div>
-                    <!-- Ajoutez les autres projets ici -->
-                </section>
-
-                <section class="cv-section">
-                    <h3>Education</h3>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4>Bachelor's degree in Multimedia</h4>
-                            <span class="company">CIFACOM</span>
-                        </div>
-                    </div>
-                </section>
+            <div class="section">
+                <h2 class="section-title">Interests</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">Esports</span>
+                    <span class="skill-tag">Travel</span>
+                    <span class="skill-tag">VFX</span>
+                    <span class="skill-tag">Soundtracks Music</span>
+                    <span class="skill-tag">AI</span>
+                </div>
             </div>
         </div>
-    </main>
 
-    <script src="js/main.js"></script>
+        <div class="right-column">
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <h3 class="experience-title">Web Developer & Designer</h3>
+                    <p class="experience-meta">Freelance | Mar 2021-Present | Paris</p>
+                    <p class="experience-description">Creative web development and design for various clients. Art and technical direction for digital projects.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Head of Design and Development</h3>
+                    <p class="experience-meta">eBrand Commerce | Sep 2022-Feb 2023 | Paris</p>
+                    <p class="experience-description">Design/dev team management and e-commerce process optimization.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Frontend & Design Instructor</h3>
+                    <p class="experience-meta">HETIC | Sep 2021-Jun 2023 | Paris</p>
+                    <p class="experience-description">Frontend development and design training. Creation of educational content.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Frontend Developer</h3>
+                    <p class="experience-meta">Wonderstudios | Jun 2019-Feb 2022 | Paris</p>
+                    <p class="experience-description">Frontend development and creation of interactive web experiences.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Designer & Frontend Developer</h3>
+                    <p class="experience-meta">Mutum | Sep 2016-Jun 2017 | Paris</p>
+                    <p class="experience-description">UI design and frontend development. Backend team collaboration.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Frontend Developer</h3>
+                    <p class="experience-meta">BEING (TBWA) | Oct 2013-Aug 2016 | Paris</p>
+                    <p class="experience-description">Web development and responsive integration for major accounts.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="experience-item">
+                    <h3 class="experience-title">Bachelor's Degree in Digital Project Management</h3>
+                    <p class="experience-meta">HETIC | 2010-2013</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Personal Projects</h2>
+                
+                <div class="project-links">
+                    <a href="https://coucou-cocotte.fr" target="_blank" class="project-link">coucou-cocotte.fr</a>
+                    <a href="https://nomadspot.me" target="_blank" class="project-link">nomadspot.me</a>
+                    <a href="https://restart-esport.fr" target="_blank" class="project-link">restart-esport.fr</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html> 
